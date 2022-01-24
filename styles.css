@@ -8,7 +8,7 @@
 }
 
 body{
-  background: #FFF89A;
+  background: #FFFF9F;
 }
 
 .body{
@@ -35,7 +35,7 @@ select{
   padding: 8px;
   border : none;
   outline: none;
-  background: #FFF89A;
+  background: #FFFF9F;
   border : 1px solid #393E46;
   border-radius: 8px;
   color : #222831;
@@ -64,8 +64,8 @@ select{
   padding: 16px;
   border-radius: 8px;
   color : white;
-  background: #00ADB5;
-  border : 1px solid #00ADB5;
+  background: #00FF00;
+  border : 1px solid #00FF00;
   margin: auto;
   text-align: center;
   text-decoration: none;
@@ -74,8 +74,8 @@ select{
 }
 
 .calculate a:hover{
-  color : #00ADB5;
-  background: #EEEEEE;
+  color : #00FF00;
+  background: #FFFF9F;
   transition: 0.5s;
 }
 
@@ -92,7 +92,7 @@ select{
 
 .result .price{
   font-weight: bold;
-  color : #00ADB5;
+  color : #00FF00;
 }
 
 @media (max-width : 767px) {

@@ -1,9 +1,9 @@
 
 let bestInClass ={
-  board : 3000,
-  laminate : 1300,
-  hinges : 400,
-  channels : 400,
+  board : 3200,
+  laminate : 1800,
+  hinges : 650,
+  channels : 650,
   handles : 200,
   fevicol : 215,
   edgeBindingTape : 15,
