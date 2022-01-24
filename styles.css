@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #EEEEEE;
+}
+
+.body{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.heading{
+  width: 90%;
+  margin: 32px;
+  margin: 32px auto;
+  padding: 16px 24px;
+  border-radius: 16px;
+  text-align: center;
+
+  color : #EEEEEE;
+  background: #222831;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+select{
+  padding: 8px;
+  border : none;
+  outline: none;
+  background: #EEEEEE;
+  border : 1px solid #393E46;
+  border-radius: 8px;
+  color : #222831;
+}
+
+.inputs{
+  width: 95%;
+  margin: 32px auto;
+  color : #222831;
+}
+
+.input{
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculate{
+  text-align: center;
+}
+
+.calculate a{
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
+  color : white;
+  background: #00ADB5;
+  border : 1px solid #00ADB5;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s;
+}
+
+.calculate a:hover{
+  color : #00ADB5;
+  background: #EEEEEE;
+  transition: 0.5s;
+}
+
+.options__heading{
+  padding: 16px;
+}
+
+.result{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.result .price{
+  font-weight: bold;
+  color : #00ADB5;
+}
+
+@media (max-width : 767px) {
+  .heading h1{
+    font-size: 20px;
+  }
+
+  .calculate a{
+    padding: 8px;
+    margin-bottom: 32px;
+  }
+}
+
+
+/* asdewq@1234 */

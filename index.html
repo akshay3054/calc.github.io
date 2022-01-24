@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="body">
+
+    <div class="inputs">
+      <div class="input">
+        <p>No Of Boards Need</p>
+        <select class="" name="boards">
+          <option value="1" selected>1</option>
+          <option value="1.5">1.5</option>
+          <option value="2">2</option>
+          <option value="2.5">2.5</option>
+          <option value="3">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9</option>
+          <option value="9.5">9.5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="input">
+        <p>No Of Channels Needed</p>
+        <select class="" name="channels">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="input">
+        <p>No Of Hinges Needed</p>
+        <select class="" name="hinges">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="input">
+        <p>No Of Locks Needed</p>
+        <select class="" name="locks">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="calculate">
+      <a href="javascript:void(0)" onclick="calculate()">Calculate</a>
+    </div>
+
+    <div class="results">
+      <p class="options__heading">
+        <b>Building Options</b>
+      </p>
+
+      <div class="result">
+        <p>
+          Standard
+        </p>
+        <p class="price">
+          Rs <span id="Standard"> 0</span>
+        </p>
+      </div>
+      <div class="result">
+        <p>
+          Extra Durable
+        </p>
+        <p class="price">
+          Rs <span id="durable">0</span>
+        </p>
+      </div>
+      <div class="result">
+        <p>
+          Extra Smooth
+        </p>
+        <p class="price">
+          Rs <span id="smooth">0</span>
+        </p>
+      </div>
+      <div class="result">
+        <p>
+          Best in Class
+        </p>
+        <p class="price">
+          Rs <span id="class">0</span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
