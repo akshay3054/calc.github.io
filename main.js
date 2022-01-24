@@ -149,7 +149,7 @@ function calculate(){
 
     finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
-    document.getElementById('class').innerText = finalCost.toLocaleString('en-IN');
+    document.getElementById('class').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
 
     //Calculating Extra Smooth
@@ -185,7 +185,7 @@ function calculate(){
 
     finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
-    document.getElementById('smooth').innerText = finalCost.toLocaleString('en-IN');
+    document.getElementById('smooth').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
     //Calculating Extra Durable
 
@@ -220,7 +220,7 @@ function calculate(){
 
     finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
-    document.getElementById('durable').innerText = finalCost.toLocaleString('en-IN');
+    document.getElementById('durable').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
 
     // Calculating Standard
@@ -256,7 +256,7 @@ function calculate(){
 
     finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
-    document.getElementById('Standard').innerText = finalCost.toLocaleString('en-IN');
+    document.getElementById('Standard').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
 
 }
