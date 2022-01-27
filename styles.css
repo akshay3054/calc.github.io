@@ -95,6 +95,18 @@ select{
   color : #00ADB5;
 }
 
+.footer{
+  width: 100%;
+  padding: 16px;
+  background: black;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer img{
+  width: 20%;
+}
+
 @media (max-width : 767px) {
   .heading h1{
     font-size: 20px;
@@ -103,6 +115,10 @@ select{
   .calculate a{
     padding: 8px;
     margin-bottom: 8px;
+  }
+
+  .footer img{
+    width: 50%;
   }
 }
 
