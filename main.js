@@ -312,7 +312,7 @@ function calculate(){
 
     finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
-    document.getElementById('Standard').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
+    document.getElementById('Budget').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
 
 }
