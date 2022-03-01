@@ -21,7 +21,6 @@ let bestInClass ={
   ucComissionMaterial : 8
 }
 
-
 let extraSmooth = {
   board : 1750,
   laminate : 1000,
@@ -313,6 +312,5 @@ function calculate(){
     finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
     document.getElementById('Budget').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
-
 
 }
