@@ -22,7 +22,7 @@ let bestInClass ={
 }
 
 let extraSmooth = {
-  board : 1850,
+  board : 2100,
   laminate : 1200,
   hinges : 400,
   channels : 400,
@@ -44,7 +44,7 @@ let extraSmooth = {
 }
 
 let extraDurable = {
-  board : 1850,
+  board : 2100,
   laminate : 700,
   hinges : 400,
   channels : 400,
@@ -66,7 +66,7 @@ let extraDurable = {
 }
 
 let standard = {
-  board : 1650,
+  board : 1900,
   laminate : 700,
   hinges : 250,
   channels : 250,
@@ -89,7 +89,7 @@ let standard = {
 
 
 let budget = {
-  board : 1950,
+  board : 2250,
   laminate : 0,
   hinges : 150,
   channels : 150,
