@@ -14,7 +14,7 @@ let bestInClass ={
   helper : 600,
   inboundLogistics : 200,
   outboundLogistics : 200,
-  labour : 20%,
+  labour : 2000,
   salesInstallation : 2000,
   partnerMaterialMargin : 0,
   ucComissionLabour : 10,
