@@ -22,25 +22,25 @@ let bestInClass ={
 }
 
 let extraSmooth = {
-  board : 2100,
-  laminate : 1200,
-  hinges : 400,
-  channels : 400,
+  board : 1850,
+  laminate : 1300,
+  hinges : 450,
+  channels : 450,
   handles : 200,
   fevicol : 215,
   edgeBindingTape : 15,
   screw : 150,
   lock : 200,
-  packingMaterialCost : 500,
+  packingMaterialCost : 200,
   additionalCarpenterPayments : 1200,
   helper : 600,
   inboundLogistics : 200,
   outboundLogistics : 200,
-  labour : 2000,
+  labour : 20,
   salesInstallation : 2000,
   partnerMaterialMargin : 0,
-  ucComissionLabour : 8,
-  ucComissionMaterial : 8
+  ucComissionLabour : 10,
+  ucComissionMaterial : 10
 }
 
 let extraDurable = {
@@ -195,7 +195,7 @@ function calculate(){
     outboundLogistics * extraSmooth.outboundLogistics;
 
     partnerEarning =
-    labour * extraSmooth.labour +
+    ((materialCost + logisticCost + labourCost)*extraSmooth.labour)/100 +
     salesInstallation * extraSmooth.salesInstallation +
     (materialCost*extraSmooth.partnerMaterialMargin)/100;
 
