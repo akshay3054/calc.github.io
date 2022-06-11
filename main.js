@@ -238,7 +238,7 @@ function calculate(){
     ((labourCost + logisticCost + partnerEarning)*extraDurable.ucComissionLabour)/100 +
     (materialCost * extraDurable.ucComissionMaterial)/100;
 
-    finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
+    finalCost = (materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
     document.getElementById('durable').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
