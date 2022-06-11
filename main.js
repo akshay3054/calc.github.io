@@ -167,7 +167,7 @@ function calculate(){
     ((labourCost + logisticCost + partnerEarning)*bestInClass.ucComissionLabour)/100 +
     (materialCost * bestInClass.ucComissionMaterial)/100;
 
-    finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
+    finalCost = (materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
     document.getElementById('class').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
@@ -203,7 +203,7 @@ function calculate(){
     ((labourCost + logisticCost + partnerEarning)*extraSmooth.ucComissionLabour)/100 +
     (materialCost * extraSmooth.ucComissionMaterial)/100;
 
-    finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
+    finalCost = (materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
     document.getElementById('smooth').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
@@ -274,7 +274,7 @@ function calculate(){
     ((labourCost + logisticCost + partnerEarning)*standard.ucComissionLabour)/100 +
     (materialCost * standard.ucComissionMaterial)/100;
 
-    finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
+    finalCost = (materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
     document.getElementById('Standard').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
   
@@ -309,7 +309,7 @@ function calculate(){
     ((labourCost + logisticCost + partnerEarning)*budget.ucComissionLabour)/100 +
     (materialCost * budget.ucComissionMaterial)/100;
 
-    finalCost = Math.round(materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
+    finalCost = (materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
     document.getElementById('Budget').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
 
