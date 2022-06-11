@@ -45,29 +45,29 @@ let extraSmooth = {
 
 let extraDurable = {
   board : 1850,
-  laminate : 700,
-  hinges : 400,
-  channels : 400,
+  laminate : 650,
+  hinges : 450,
+  channels : 450,
   handles : 200,
   fevicol : 215,
   edgeBindingTape : 15,
   screw : 150,
   lock : 200,
-  packingMaterialCost : 500,
+  packingMaterialCost : 200,
   additionalCarpenterPayments : 1200,
   helper : 600,
   inboundLogistics : 200,
   outboundLogistics : 200,
-  labour : 2000,
+  labour : 20,
   salesInstallation : 2000,
   partnerMaterialMargin : 0,
-  ucComissionLabour : 8,
-  ucComissionMaterial : 8
+  ucComissionLabour : 10,
+  ucComissionMaterial : 10
 }
 
 let standard = {
   board : 1450,
-  laminate : 700,
+  laminate : 650,
   hinges : 250,
   channels : 250,
   handles : 200,
@@ -75,16 +75,16 @@ let standard = {
   edgeBindingTape : 15,
   screw : 150,
   lock : 200,
-  packingMaterialCost : 500,
+  packingMaterialCost : 200,
   additionalCarpenterPayments : 1200,
   helper : 600,
   inboundLogistics : 200,
   outboundLogistics : 200,
-  labour : 2000,
+  labour : 20,
   salesInstallation : 2000,
   partnerMaterialMargin : 0,
-  ucComissionLabour : 8,
-  ucComissionMaterial : 8
+  ucComissionLabour : 10,
+  ucComissionMaterial : 10
 }
 
 
@@ -103,11 +103,11 @@ let budget = {
   helper : 200,
   inboundLogistics : 200,
   outboundLogistics : 0,
-  labour : 1500,
+  labour : 15,
   salesInstallation : 1500,
   partnerMaterialMargin : 0,
-  ucComissionLabour : 8,
-  ucComissionMaterial : 8
+  ucComissionLabour : 10,
+  ucComissionMaterial : 10
 }
 
 function calculate(){
@@ -230,7 +230,7 @@ function calculate(){
     outboundLogistics * extraDurable.outboundLogistics;
 
     partnerEarning =
-    labour * extraDurable.labour +
+    ((materialCost + logisticCost + labourCost)*extraDurable.labour)/100 +
     salesInstallation * extraDurable.salesInstallation +
     (materialCost*extraDurable.partnerMaterialMargin)/100;
 
@@ -266,7 +266,7 @@ function calculate(){
     outboundLogistics * standard.outboundLogistics;
 
     partnerEarning =
-    labour * standard.labour * 0.75 +
+    ((materialCost + logisticCost + labourCost)*standard.labour)/100 +
     salesInstallation * standard.salesInstallation +
     (materialCost*standard.partnerMaterialMargin)/100;
 
@@ -301,7 +301,7 @@ function calculate(){
     outboundLogistics * budget.outboundLogistics;
 
     partnerEarning =
-    labour * budget.labour * 0.75 +
+    ((materialCost + logisticCost + labourCost)*budget.labour)/100 +
     salesInstallation * budget.salesInstallation +
     (materialCost*budget.partnerMaterialMargin)/100;
 
