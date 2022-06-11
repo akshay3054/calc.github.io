@@ -1,15 +1,15 @@
 
 let bestInClass ={
-  board : 3000,
-  laminate : 1500,
-  hinges : 650,
-  channels : 650,
+  board : 2800,
+  laminate : 1300,
+  hinges : 450,
+  channels : 450,
   handles : 200,
   fevicol : 215,
   edgeBindingTape : 15,
   screw : 150,
   lock : 200,
-  packingMaterialCost : 500,
+  packingMaterialCost : 200,
   additionalCarpenterPayments : 1200,
   helper : 600,
   inboundLogistics : 200,
@@ -17,8 +17,8 @@ let bestInClass ={
   labour : 2000,
   salesInstallation : 2000,
   partnerMaterialMargin : 0,
-  ucComissionLabour : 8,
-  ucComissionMaterial : 8
+  ucComissionLabour : 10,
+  ucComissionMaterial : 10
 }
 
 let extraSmooth = {
