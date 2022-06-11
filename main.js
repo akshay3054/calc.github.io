@@ -294,7 +294,7 @@ function calculate(){
 
     labourCost =
     additionalCarpenterPayments * budget.additionalCarpenterPayments +
-    helper * budget.helper * 0.75;
+    helper * budget.helper;
 
     logisticCost =
     inboundLogistics * budget.inboundLogistics +
