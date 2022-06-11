@@ -14,7 +14,7 @@ let bestInClass ={
   helper : 600,
   inboundLogistics : 200,
   outboundLogistics : 200,
-  labour : 2000,
+  labour : 10,
   salesInstallation : 2000,
   partnerMaterialMargin : 0,
   ucComissionLabour : 10,
@@ -159,10 +159,10 @@ function calculate(){
     outboundLogistics * bestInClass.outboundLogistics;
 
     partnerEarning =
-    labour * bestInClass.labour +
+    ((materialCost + logisticCost + labourCost)*bestInClass.labour)/100 +
     salesInstallation * bestInClass.salesInstallation +
-    (materialCost*bestInClass.partnerMaterialMargin)/100;
-
+    (materialCost*bestInClass.partnerMaterialMargin)/100;   
+    
     ucEarnings =
     ((labourCost + logisticCost + partnerEarning)*bestInClass.ucComissionLabour)/100 +
     (materialCost * bestInClass.ucComissionMaterial)/100;
