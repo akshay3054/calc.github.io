@@ -103,7 +103,7 @@ let budget = {
   helper : 200,
   inboundLogistics : 200,
   outboundLogistics : 0,
-  labour : 15,
+  labour : 20,
   salesInstallation : 1500,
   partnerMaterialMargin : 0,
   ucComissionLabour : 10,
