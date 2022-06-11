@@ -89,7 +89,7 @@ let standard = {
 
 
 let budget = {
-  board : 1950,
+  board : 2050,
   laminate : 0,
   hinges : 150,
   channels : 150,
