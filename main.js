@@ -311,6 +311,6 @@ function calculate(){
 
     finalCost = (materialCost + labourCost + logisticCost + partnerEarning + ucEarnings);
 
-    document.getElementById('Budget').innerText = (Math.round(finalCost/100)*100).toLocaleString('en-IN');
+    document.getElementById('Budget').innerText = ((finalCost/100)*100).toLocaleString('en-IN');
 
 }
